@@ -1,0 +1,95 @@
+/* principal.css */
+@font-face {
+    font-family: 'Free';
+    src: url('fonts/Freedom45.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'Coffee';
+    src: url('fonts/CoffeeButter-ZVdnx.ttf') format('truetype'),
+}
+
+body{
+    background-image: url(./0ae55597547e782ec26863048559e796.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos para el título */
+h1 {
+    color: #333;
+    font-size: 80px;
+    font-family: Coffee;
+
+}
+
+
+
+/* Estilos para el label y el input */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: Free;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Agregar espacio inferior para separar del siguiente elemento */
+}
+
+/* Estilos para los botones */
+.botonf {
+    transition: all 1s;
+    background-color: #47ff22;
+    font-family: Coffee;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /
+}
+
+
+.botonf:hover{
+    transform: scale(1.5);
+
+}
+.boton {
+    transition: all 1s;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Agregar espacio inferior para separar del siguiente elemento */
+    font-family: Coffee;
+    font-size: 30px;
+    
+}
+
+.boton:hover{
+    transform: scale(1.5);
+}
+
+.boton2 {
+    transition: all 1s;
+    background-color: #ff5722;
+    font-family: Coffee;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /
+}
+
+
+.boton2:hover{
+    transform: scale(1.5);
+
+}

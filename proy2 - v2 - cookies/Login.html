@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+    <div class="cuadro">
+        <h1>LOGIN</h1>
+
+        <img src="./c3af06866d3f174fe9ce1172ab80deea-removebg-preview.png">
+        <form action="Login.php" method="post">
+            <label for="Usuario">Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  </label>
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario..." /><br><br>
+            <label for="pwd">Contraseña:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Contraseña de acceso..."><br><br>
+            <input class="botonconectar" type="submit" value="Iniciar"><br><br>
+            <div id="error-message"></div>
+        </form>
+    </div>
+    <script>
+        // JavaScript para mostrar mensaje de error en el cuadro de login
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get("error");
+        
+        if (error) {
+            document.getElementById("error-message").textContent = "Usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.";
+        }
+    </script>
+</body>
+</html>
